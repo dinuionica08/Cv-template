@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class ="text-center">Hello, {{ intro }}!</h1>
+
+<div class="text-center">
+    <img src="https://bit.ly/3940T5y" class="rounded-circle" alt="me">
+</div>
+
+<div class="container">
+   <div class="container">
+      <div class="row no-gutters bg-light position-relative">
+         <div class="col-md-6 mb-md-0 p-md-4">
+            <img src="https://cdn-media-1.freecodecamp.org/images/0*TDuYHwIBvClPXrgk." class="w-100" alt="work_experience">
+         </div>
+         <div class="col-md-6 position-static p-4 pl-md-0">
+
+            <h5 class="mt-0" style="color:red" >Education</h5>
+
+            {% for key, value in education.items() %}
+
+              <p> {{ value }}</p>
+
+            {% endfor %}
+
+         </div>
+       
+         <div class="col-md-6 mb-md-0 p-md-4">
+            <img src="https://miro.medium.com/max/1500/1*t9eJQXoWfcH_mkBGuLiJFw.jpeg" class="w-100" alt="...">
+         </div>
+         <div class="col-md-6 position-static p-4 pl-md-0">
+
+            <h5 class="mt-0" style="color:red">Projects și Languages and Technologies</h5>
+   
+            {% for key, value in projects.items() %}
+
+            <p> {{ value }}</p>
+
+            {% endfor %}
+   
+         </div>
+         <div class="col-md-6 mb-md-0 p-md-4">
+            <img src="https://governmentciomedia.com/sites/default/files/styles/featured_article_image/public/2018-01/Developers.jpg?itok=nEeW1Au1" class="w-100" alt="">
+         </div>
+         <div class="col-md-6 position-static p-4 pl-md-0">
+            
+            <h5 class="mt-0" style="color:red">Work Experience</h5>
+   
+            {% for key, value in work_exp.items() %}
+
+            <p> {{ value }}</p>
+
+            {% endfor %}
+
+            <p> I took a series of courses such as </p>
+
+             {% for key, value in courses.items() %}
+
+            <p> {{ value }}</p>
+
+            {% endfor %}
+
+   
+         </div>
+      </div>
+</div>
+{% endblock %}

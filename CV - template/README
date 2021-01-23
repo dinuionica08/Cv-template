@@ -1,0 +1,10 @@
+//Dinu Ion Irinel -315 CA
+Laborator Flask Introducere in informatica
+
+Pentru rezolvarea acestui laborator am folosit frameworkul
+flask pentru partea de backend iar partea de style (UI)
+am utilizat compenente boostrap precum : nav-bar, div-uri, footer
+Sectiuni din pagina home sunt populate din dictionare (education,
+work_exp ) scrise in Python.
+
+Pentru a rula serverul -> python3 cv.py
